@@ -37,6 +37,17 @@ config = {
             host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: '2368'
+        },
+        //配置又拍云
+        upyun: {
+            bucketname: 'my-first-bucket', //空间名称
+            username: 'somebody', //操作员名称
+            password: 'secret', //密码
+            root: '/images/', //文件存储在哪个目录。可以设置为 `/` 表示存储在根目录
+            prefix: 'http://cdn.my-domainname.com' //上传的文件的 URL 前缀，
+                                                    //可以是你自己绑定的二级域名或者又拍云默认分配的二级域名。
+                                                    //文件最中的 URL 为：prefix + root + md5(file) + extension
+                                                    //例如：http://cdn.my-domainname.com/images/a/ab/dqwerqwetetqwedfasdf.png
         }
     },
 
@@ -58,6 +69,17 @@ config = {
             host: '127.0.0.1',
             // Port to be passed to node's `net.Server#listen()`, for iisnode set this to `process.env.PORT`
             port: '2368'
+        },
+        //配置又拍云
+        upyun: {
+            bucketname: 'my-first-bucket', //空间名称
+            username: 'somebody', //操作员名称
+            password: 'secret', //密码
+            root: '/images/', //文件存储在哪个目录。可以设置为 `/` 表示存储在根目录
+            prefix: 'http://cdn.my-domainname.com' //上传的文件的 URL 前缀，
+                                                    //可以是你自己绑定的二级域名或者又拍云默认分配的二级域名。
+                                                    //文件最中的 URL 为：prefix + root + md5(file) + extension
+                                                    //例如：http://cdn.my-domainname.com/images/a/ab/dqwerqwetetqwedfasdf.png
         }
     },
 

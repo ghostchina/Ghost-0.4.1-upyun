@@ -1,10 +1,12 @@
 var errors = require('../errorHandling'),
     storage;
 
+var upyunConfig  = require('../config/')().upyun;
+
 function get_storage() {
     // TODO: this is where the check for storage plugins should go
     // Local file system is the default
-    var storageChoice = 'localfilesystem';
+    var storageChoice = upyunConfig? 'upyun':'localfilesystem';
 
     if (storage) {
         return storage;
